@@ -11,17 +11,6 @@ hamburger.addEventListener('click', function() {
     }
 });
 
-// SLIDES
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2500);
-
-function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
-
 // SECTION CONTROLS
 $('.closed').mouseup(function() {
     if($(this).hasClass('closed')) {

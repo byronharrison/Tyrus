@@ -5,8 +5,8 @@
         <title>Demystify Feedback - Tyrus</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Tyrus is a free digital toolkit from Airbnb Design that helps freelance illustrators optimize their business, so they have more time to focus on what they love." />
-        <link rel="icon" type="../image/png" href="img/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="../image/png" href="img/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
         <link rel="stylesheet" type="text/css" href="../css/styles.css">
         <meta property="og:site_name" content="Tyrus" />
         <meta property="og:url" content="https://tyrus.design" />
@@ -468,6 +468,19 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="../js/scripts.js"></script>
+
+        <script>
+            // SLIDES
+            var slides = document.querySelectorAll('#slides .slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide,2500);
+
+            function nextSlide() {
+                slides[currentSlide].className = 'slide';
+                currentSlide = (currentSlide+1)%slides.length;
+                slides[currentSlide].className = 'slide showing';
+            }
+        </script>
 
     </body>
 </html>
