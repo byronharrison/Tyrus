@@ -241,6 +241,15 @@
                 currentSlide = (currentSlide+1)%slides.length;
                 slides[currentSlide].className = 'slide showing';
             }
+
+            // COLOR HOVER
+            $('.color-link').mouseout(function() {
+                $(this).parent().removeClass();
+            });
+            $('.color-link').mouseover(function() {
+                $(this).parent().removeClass();
+                $(this).parent().addClass($(this).attr('color'));
+            });
         </script>
 
     </body>
