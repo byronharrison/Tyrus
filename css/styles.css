@@ -124,7 +124,7 @@ html, body {
   background-color: white;
   font-family: "Cereal", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: black;
   margin: 0px;
   padding: 0px;
@@ -184,6 +184,7 @@ img.both {
   padding: 6px;
   font-size: 14px;
   line-height: 14px;
+  letter-spacing: 0.6px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -222,13 +223,15 @@ header {
 }
 header > .logo {
   display: block;
+  position: relative;
+  top: 12px;
   height: 24px;
   width: 74px;
   background-image: url("../img/tyrus-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-left: 15px;
+  margin-left: 14px;
   z-index: 400;
 }
 @media (min-width: 1024px) {
@@ -284,7 +287,7 @@ header nav a {
   }
 }
 header nav a span {
-  padding: 15px;
+  padding: 14px;
 }
 header nav a:nth-child(1) {
   display: none;
@@ -408,7 +411,7 @@ header #hamburger > span {
 }
 header #hamburger > div {
   width: 20px;
-  height: 15px;
+  height: 14px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -522,7 +525,7 @@ main nav a {
   }
 }
 main nav a span {
-  padding: 15px;
+  padding: 14px;
 }
 main nav a:nth-child(1) {
   display: none;
@@ -698,10 +701,12 @@ main.landing #intro > div:first-of-type > h1 img {
   display: block;
   width: calc(100% - 36px);
   height: auto;
+  margin-bottom: 60px;
 }
 @media (min-width: 1024px) {
   main.landing #intro > div:first-of-type > h1 img {
     width: calc(100% - 60px);
+    margin: 0px;
   }
 }
 main.landing #intro > div:first-of-type > h1 span {
@@ -1091,7 +1096,7 @@ main.landing #how-it-works > div:nth-child(3) figure ul li {
   font-weight: 500;
   margin-bottom: 24px;
   padding-left: 24px;
-  background-image: url("../img/arw-up-right.svg");
+  background-image: url("../img/arw-right.svg");
   background-repeat: no-repeat;
   background-position: top 5px left;
   background-size: 14px 14px;
@@ -1143,7 +1148,7 @@ main.landing #how-it-works > div:nth-child(4) figure ul li {
   font-weight: 500;
   margin-bottom: 24px;
   padding-left: 24px;
-  background-image: url("../img/arw-up-right.svg");
+  background-image: url("../img/arw-right.svg");
   background-repeat: no-repeat;
   background-position: top 5px left;
   background-size: 14px 14px;
@@ -1176,6 +1181,7 @@ main.steps #hero > div:first-child {
 @media (min-width: 1024px) {
   main.steps #hero > div:first-child {
     padding: 24px 30px 40px 30px;
+    min-height: 273px;
   }
 }
 main.steps #hero > div:first-child.pink {
@@ -1396,12 +1402,11 @@ main.steps #warm-up h2 {
   font-size: 14px;
   line-height: 14px;
   color: white;
+  font-weight: 500;
   padding: 18px 18px 18px 18px;
 }
 @media (min-width: 1024px) {
   main.steps #warm-up h2 {
-    font-size: 16px;
-    line-height: 16px;
     padding: 30px 30px 30px 30px;
   }
 }
@@ -1579,10 +1584,12 @@ main.steps #warm-up > .collapse > div:nth-child(3) > div:first-child h3 {
 main.steps #warm-up > .collapse > div:nth-child(3) > div:last-child {
   width: 100%;
   background-color: black;
+  border-bottom: 1px solid black;
 }
 @media (min-width: 1024px) {
   main.steps #warm-up > .collapse > div:nth-child(3) > div:last-child {
     width: 50%;
+    border-bottom: 0px;
   }
 }
 main.steps #warm-up > .collapse > div:nth-child(3) > div:last-child > #slides {
@@ -1722,12 +1729,11 @@ main.steps #deep-dive h2 {
   font-size: 14px;
   line-height: 14px;
   color: white;
+  font-weight: 500;
   padding: 18px 18px 18px 18px;
 }
 @media (min-width: 1024px) {
   main.steps #deep-dive h2 {
-    font-size: 16px;
-    line-height: 16px;
     padding: 30px 30px 30px 30px;
   }
 }
@@ -2101,7 +2107,7 @@ main.steps #deep-dive > .collapse > div:nth-child(5) > div .collapse > div:nth-c
 }
 main.steps #deep-dive > .collapse > div:nth-child(5) > div .collapse > div:nth-child(1) > b {
   display: block;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   text-decoration: underline;
@@ -2146,7 +2152,7 @@ main.steps #deep-dive > .collapse > div:nth-child(5) > div .collapse > div:nth-c
   height: 90px;
   background-color: black;
   border-bottom: 1px solid black;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   color: white;
@@ -2222,7 +2228,7 @@ main.steps #deep-dive > .collapse > div:nth-child(5) > div .collapse > div:nth-c
   height: 90px;
   background-color: #f1ede5;
   border-bottom: 1px solid black;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   padding: 18px;
@@ -2306,12 +2312,11 @@ main.steps #templates h2 {
   font-size: 14px;
   line-height: 14px;
   color: white;
+  font-weight: 500;
   padding: 18px 18px 18px 18px;
 }
 @media (min-width: 1024px) {
   main.steps #templates h2 {
-    font-size: 16px;
-    line-height: 16px;
     padding: 30px 30px 30px 30px;
   }
 }
@@ -2470,6 +2475,9 @@ main.steps #templates > .collapse > div:last-child a {
   color: white;
   padding: 18px 60px 18px 18px;
   border-bottom: 1px solid white;
+}
+main.steps #templates > .collapse > div:last-child a:last-child {
+  border-bottom: 0px;
 }
 @media (min-width: 1024px) {
   main.steps #templates > .collapse > div:last-child a {
@@ -3096,7 +3104,7 @@ footer > div:first-child {
 }
 footer > div:first-child a:link {
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -3222,7 +3230,7 @@ footer > div:nth-child(2) > a a:active {
 @media (min-width: 1024px) {
   footer > div:nth-child(2) > a span {
     color: black;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
     font-weight: 500;
     padding-left: 30px;
@@ -3230,7 +3238,7 @@ footer > div:nth-child(2) > a a:active {
 }
 footer > div:last-child {
   min-height: 130px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 500;
 }

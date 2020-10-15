@@ -141,7 +141,7 @@ html, body {
     background-color: $color-white;
     font-family: 'Cereal', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     color: $color-black;
     margin: 0px;
     padding: 0px;
@@ -195,6 +195,7 @@ img {
 	padding: 6px;
 	font-size: 14px;
 	line-height: 14px;
+	letter-spacing: 0.6px;
 	font-weight: 500;
 	text-transform: uppercase;
 
@@ -232,13 +233,15 @@ header {
 	/* LOGO */
 	> .logo {
 		display: block;
+		position: relative;
+		top: 12px;
 		height: 24px;
 		width: 74px;
 		background-image: url('../img/tyrus-logo.svg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: contain;
-		margin-left: 15px;
+		margin-left: 14px;
 		z-index: 400;
 
 		@media (min-width: 1024px) {
@@ -291,7 +294,7 @@ header {
 			}
 
 			span {
-				padding: 15px;
+				padding: 14px;
 			}
 
 			/* LOGO */
@@ -419,7 +422,7 @@ header {
 
 		> div {
 			width: 20px;
-			height: 15px;
+			height: 14px;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -544,7 +547,7 @@ main {
 			}
 
 			span {
-				padding: 15px;
+				padding: 14px;
 			}
 
 			/* LOGO */
@@ -725,9 +728,11 @@ main {
 						display: block;
 						width: calc(100% - 36px);
 						height: auto;
+						margin-bottom: 60px;
 
 						@media (min-width: 1024px) {
 							width: calc(100% - 60px);
+							margin: 0px;
 						}
 					}
 					span {
@@ -1164,7 +1169,7 @@ main {
 							font-weight: 500;
 							margin-bottom: 24px;
 							padding-left: 24px;
-							background-image: url('../img/arw-up-right.svg');
+							background-image: url('../img/arw-right.svg');
 							background-repeat: no-repeat;
 							background-position: top 5px left;
 							background-size: 14px 14px;
@@ -1221,7 +1226,7 @@ main {
 							font-weight: 500;
 							margin-bottom: 24px;
 							padding-left: 24px;
-							background-image: url('../img/arw-up-right.svg');
+							background-image: url('../img/arw-right.svg');
 							background-repeat: no-repeat;
 							background-position: top 5px left;
 							background-size: 14px 14px;
@@ -1255,6 +1260,7 @@ main {
 
 				@media (min-width: 1024px) {
 					padding: 24px 30px 40px 30px;
+					min-height: 273px;
 				}
 
 				/* COLORS */
@@ -1498,11 +1504,10 @@ main {
 				font-size: 14px;
 				line-height: 14px;
 				color: $color-white;
+				font-weight: 500;
 				padding: 18px 18px 18px 18px;
 
 				@media (min-width: 1024px) {
-					font-size: 16px;
-					line-height: 16px;
 					padding: 30px 30px 30px 30px;
 				}
 
@@ -1761,9 +1766,11 @@ main {
 					> div:last-child {
 						width: 100%;
 						background-color: $color-black;
+						border-bottom: 1px solid $color-black;
 
 						@media (min-width: 1024px) {
 							width: 50%;
+							border-bottom: 0px;
 						}
 
 						> #slides {
@@ -1924,11 +1931,10 @@ main {
 				font-size: 14px;
 				line-height: 14px;
 				color: $color-white;
+				font-weight: 500;
 				padding: 18px 18px 18px 18px;
 
 				@media (min-width: 1024px) {
-					font-size: 16px;
-					line-height: 16px;
 					padding: 30px 30px 30px 30px;
 				}
 
@@ -2432,7 +2438,7 @@ main {
 
 								> b {
 									display: block;
-									font-size: 15px;
+									font-size: 14px;
 									line-height: 18px;
 									font-weight: 500;
 									text-decoration: underline;
@@ -2475,7 +2481,7 @@ main {
 									height: 90px;
 									background-color: $color-wrong;
 									border-bottom: 1px solid $color-black;
-									font-size: 15px;
+									font-size: 14px;
 									line-height: 18px;
 									font-weight: 500;
 									color: $color-white;
@@ -2552,7 +2558,7 @@ main {
 									height: 90px;
 									background-color: $color-right;
 									border-bottom: 1px solid $color-black;
-									font-size: 15px;
+									font-size: 14px;
 									line-height: 18px;
 									font-weight: 500;
 									padding: 18px;
@@ -2657,11 +2663,10 @@ main {
 				font-size: 14px;
 				line-height: 14px;
 				color: $color-white;
+				font-weight: 500;
 				padding: 18px 18px 18px 18px;
 
 				@media (min-width: 1024px) {
-					font-size: 16px;
-					line-height: 16px;
 					padding: 30px 30px 30px 30px;
 				}
 
@@ -2917,6 +2922,10 @@ main {
 						color: $color-white;
 						padding: 18px 60px 18px 18px;
 						border-bottom: 1px solid $color-white;
+
+						&:last-child {
+							border-bottom: 0px;
+						}
 
 						@media (min-width: 1024px) {
 							font-size: 44px;
@@ -3636,7 +3645,7 @@ footer {
 
 				&:link {
 					color: $color-black;
-					font-size: 15px;
+					font-size: 14px;
 					line-height: 18px;
 					font-weight: 500;
 					text-decoration: none;
@@ -3758,7 +3767,7 @@ footer {
 					}
 					@media (min-width: 1024px) {
 						color: $color-black;
-						font-size: 15px;
+						font-size: 14px;
 						line-height: 18px;
 						font-weight: 500;
 						padding-left: 30px;
@@ -3768,7 +3777,7 @@ footer {
 		}
 		&:last-child {
 			min-height: 130px;
-			font-size: 15px;
+			font-size: 14px;
 			line-height: 18px;
 			font-weight: 500;
 
