@@ -850,9 +850,9 @@ main.landing #intro-links > a.next span:last-child:after {
 }
 @media (min-width: 1024px) {
   main.landing #intro-links > a.next span:last-child:after {
-    top: 3px;
-    height: 20px;
-    width: 18px;
+    top: 5px;
+    height: 14px;
+    width: 14px;
   }
 }
 main.landing #intro-links > a.pink {
@@ -884,6 +884,7 @@ main.landing #intro-links > a span {
   transform: translate(-50%, -50%);
   font-size: 12px;
   line-height: 18px;
+  text-transform: uppercase;
   font-weight: 500;
   color: black;
   text-decoration: none;
@@ -2851,9 +2852,9 @@ main.steps .read-time span {
 }
 @media (min-width: 1024px) {
   #next-up > a.prev span:last-child:after {
-    top: 3px;
-    height: 20px;
-    width: 18px;
+    top: 6px;
+    height: 14px;
+    width: 14px;
   }
 }
 #next-up > a.next span:first-child:after {
@@ -2891,9 +2892,9 @@ main.steps .read-time span {
 }
 @media (min-width: 1024px) {
   #next-up > a.next span:last-child:after {
-    top: 3px;
-    height: 20px;
-    width: 18px;
+    top: 6px;
+    height: 14px;
+    width: 14px;
   }
 }
 #next-up > a.back-to-top {
@@ -2915,8 +2916,8 @@ main.steps .read-time span {
 @media (min-width: 1024px) {
   #next-up > a.back-to-top span:after {
     top: 4px;
-    height: 18px;
-    width: 18px;
+    height: 17px;
+    width: 14px;
   }
 }
 #next-up > a.back-to-top:hover {
