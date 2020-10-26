@@ -694,8 +694,24 @@ main {
 				margin-bottom: 32px;
 			}
 
-			&:last-of-type {
-				margin-bottom: 0px;
+			a {
+
+				&:link {
+					color: $color-black;
+					text-decoration: underline;
+				}
+				&:visited {
+					color: $color-black;
+					text-decoration: underline;
+				}
+				&:hover {
+					color: $color-black;
+					text-decoration: underline;
+				}
+				&:active {
+					color: $color-black;
+					text-decoration: underline;
+				}
 			}
 		}
 
