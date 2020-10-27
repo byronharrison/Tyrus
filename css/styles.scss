@@ -208,7 +208,8 @@ img {
 		text-decoration: none;
 	}
 	&:hover {
-		color: $color-black;
+		color: $color-lightgrey;
+		background-color: $color-black;
 		text-decoration: none;
 	}
 	&:active {
@@ -969,10 +970,10 @@ main {
 
 			> div:first-child {
 				border-bottom: 1px solid $color-black;
-				padding: 18px 18px 100px 18px;
+				padding: 18px 18px 60px 18px;
 
 				@media (min-width: 1024px) {
-					padding: 30px 30px 100px 30px;
+					padding: 30px 30px 160px 30px;
 				}
 			}
 			> div:last-child {
@@ -3074,10 +3075,10 @@ main {
 			text-transform: uppercase;
 			color: $color-white;
 			border-bottom: 1px solid $color-white;
-			padding: 5px 18px;
+			padding: 8px 18px;
 
 			@media (min-width: 1024px) {
-				padding: 5px 30px;
+				padding: 8px 30px;
 			}
 
 			span {
@@ -3309,6 +3310,7 @@ main {
 
 			span {
 				transition: 0.15s ease;
+				white-space: nowrap;
 
 				&:first-child {
 					display: block;
