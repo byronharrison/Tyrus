@@ -670,6 +670,9 @@ main.landing p {
     margin-bottom: 32px;
   }
 }
+main.landing p a {
+  color: black;
+}
 main.landing p a:link {
   color: black;
   text-decoration: underline;
